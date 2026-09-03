@@ -76,20 +76,19 @@
             </feature>
         </config-file>
 
-        <!-- Únicamente los puentes/wrappers nativos de Cordova -->
+        <!-- Código puente del plugin -->
         <header-file src="src/ios/AppsFlyerPlugin.h"/>
         <source-file src="src/ios/AppsFlyerPlugin.m"/>
         <header-file src="src/ios/AppsFlyerX+AppController.h"/>
         <source-file src="src/ios/AppsFlyerX+AppController.m"/>
 
-        <!-- Framework oficial vía CocoaPods (evita duplicar .h locales) -->
-        <podspec>
-            <config>
-            </config>
-            <pods use-frameworks="true">
-               <pod name="AppsFlyerFramework" spec="6.18.1"/>
-            </pods>
-        </podspec>
+        <!-- Inyección oficial de CocoaPods para Cordova/Capacitor -->
+        <framework src="AppsFlyerFramework" spec="~> 6.18.1" />
+
+        <!-- Frameworks nativos requeridos por AppsFlyer SDK -->
+        <framework src="AdSupport.framework" />
+        <framework src="iAd.framework" />
+        <framework src="AppTrackingTransparency.framework" weak="true" />
     </platform>
 
 </plugin>

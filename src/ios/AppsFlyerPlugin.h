@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
-#import "AppsFlyerAttribution.h"
+#import <AppsFlyerLib/AppsFlyerLib.h>
 #import <objc/message.h>
 
 @interface AppsFlyerPlugin : CDVPlugin <UIApplicationDelegate, AppsFlyerLibDelegate, AppsFlyerDeepLinkDelegate>

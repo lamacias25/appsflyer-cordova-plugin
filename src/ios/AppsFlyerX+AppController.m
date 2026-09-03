@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "AppsFlyerX+AppController.h"
 #import <objc/runtime.h>
-#import "AppsFlyerAttribution.h"
+#import <AppsFlyerLib/AppsFlyerLib.h>
 
 @implementation AppDelegate (AppsFlyerX)
 #ifndef AFSDK_DISABLE_APP_DELEGATE

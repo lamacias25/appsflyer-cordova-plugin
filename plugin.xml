@@ -82,8 +82,8 @@
         <header-file src="src/ios/AppsFlyerX+AppController.h"/>
         <source-file src="src/ios/AppsFlyerX+AppController.m"/>
 
-        <!-- Dependencia de CocoaPods requerida por MABS -->
-        <framework src="AppsFlyerFramework" spec="~> 6.18.1" />
+        <!-- Dependencia de CocoaPods correcta para MABS / Cordova -->
+        <framework src="AppsFlyerFramework" type="podspec" version="~> 6.18.1" />
         
         <!-- Frameworks requeridos por iOS -->
         <framework src="AdSupport.framework" />
